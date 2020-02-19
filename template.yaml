@@ -211,7 +211,7 @@ Resources:
             Action: ['sts:AssumeRole']
       Path: /
       Policies:
-        - PolicyName: AmazonECSTaskExecutionRolePolicy
+        - PolicyName: AmazonECSServiceRolePolicy
           PolicyDocument:
             Statement:
               - Effect: Allow

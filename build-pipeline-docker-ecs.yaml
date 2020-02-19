@@ -40,7 +40,7 @@ Resources:
                 Owner: !Ref RepositoryOwner
                 Repo: !Ref RepositoryName
                 Branch: !Ref RepositoryBranch
-                OAuthToken: "{{resolve:ssm:/github/amanpurwar1_access_token:1}}"
+                OAuthToken: "{{resolve:ssm:/github/amanpurwar1_access_token:1}}" # Should be changed
               OutputArtifacts:
               - Name: SourceOutput
         - Name: Build
